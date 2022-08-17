@@ -6,6 +6,7 @@ body {
     flex-direction: column;
   }
 
+/*header*/
 .header {
     background: #1F2937;
     display: flex;
@@ -30,10 +31,11 @@ body {
 }
 
 
-
+/*1st section*/
 .section1 {
     background: #1F2937;
     display: flex;
+    justify-content: space-between;
     padding-left: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -48,14 +50,14 @@ body {
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
-    margin: 0px 5px 0px 0px;
+    margin: 0px 0px 5px 0px;
 }
 
 .subtext {
     font-size: 18px;
     color: #E5E7EB;
-    width: 300px;
-    margin: 0px 5px 0px 0px;
+    width: 400px;
+    margin: 0px 0px 5px 0px;
 }
 
 .signup_button {
@@ -65,21 +67,48 @@ body {
     border: 1px solid royalblue;
     padding: 8px 16px;
     border-radius: 8px;
-    margin: 0px 5px 0px 0px;
     font-weight: bold;
+    max-width: fit-content;
+    margin: 0px 0px 5px 0px;
 }
 
 .section1_image {
-    /*max-height: 150px;
-    max-width: 600px;*/
-    height: 150px;
-    width: 400px;
-    /*
-    float: right;
-    margin-right: 100px;
-    margin-top: -150px;
-    align-self: flex-end;
-    */
+    max-height: 150px;
+    max-width: 600px;
+    display: flex;
+    margin: 5px 100px 5px auto;
+    
+}
+
+/*Section 2*/
+
+.section2 {
+    display:flex;
+    flex-direction: column;
+}
+
+.section2 .title {
+    display:flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+.section2 .images {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.image_1, .image_2, .image_3, .image_4 {
+    display:flex;
+}
+
+.caption {
+    font-size: 18px;
+    color: #1F2937;
+    padding: 5px;
 }
 
 .footer {
